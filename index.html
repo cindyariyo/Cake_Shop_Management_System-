@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy's Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menuSection">Menu</a></li>
+            <li><a href="#orderSection">Order</a></li>
+            <li><a href="#purchasesSection">Purchases</a></li>
+        </ul>
+    </nav>
+
+    <h1>
+        <div class="hwrap">
+            <div class="hmove">
+                <div class="hslide">Welcome to Cindy's Cake Shop Manager</div>
+                <div class="hslide">Delicious cakes made fresh daily!</div>
+            </div>
+        </div>
+    </h1>
+
+    <div id="header"></div>
+
+    <section id="menuSection">
+        <img src="https://lh3.googleusercontent.com/proxy/xKvBP5evdkt9ME4hjMzumXf4mTrHuu6HQlUX_clfPkmYmuj27oAgsNVE5lgCkeeyxO3IhIAxXj3rkA4Jl99VQFx279nAx05kkVLFTpXdhQAWJ_iwTJOKJZVrxtoI_wvx1gjKQDgcSp0ghg"
+            alt="Menu Image" id="menuImage">
+        <div class="menu-content">
+            <h2>Available Cakes</h2>
+            <ul id="cakes"></ul>
+        </div>
+        <ul id="cakes"></ul>
+    </section>
+
+    <section id="orderSection">
+        <h2>Submit an Order</h2>
+        <form id="orderForm">
+            <label for="customer">Customer Name:</label>
+            <input type="text" id="customer" name="customer" required>
+            <br>
+            <label for="cakeId">Cake ID:</label>
+            <input type="number" id="cakeId" name="cakeId" required>
+            <br>
+            <button type="submit">Submit</button>
+            <div id="error-message" style="color: red;"></div>
+        </form>
+    </section>
+    <section id="purchasesSection">
+        <h2>Order History</h2>
+        <h3>Here you can see our most popular cakes</h3>
+        <h4>Delete an order once it's completed</h4>
+        <ul id="orders"></ul>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

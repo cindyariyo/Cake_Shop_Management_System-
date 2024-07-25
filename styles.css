@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fac490;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #dc96a0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#header {
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L21vdGFybzdfM2RfY2FydG9vbl9zdHlsZV9yZW5kZXJpbmdfb2ZfY2FrZV9zaG9wX2NhcnRvb25fc3R5bGVfYl83NGYwNzFkOS1jZDFjLTRmMTEtYWFiNS1hMzRhM2U4MDlkZjBfMS5qcGc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #dc96a0;
+    text-align: center;
+}
+h2 {
+    color: #c05969;
+    text-align: center;
+    margin: 80px 0 60px;
+}
+h3 {
+    color: #BD7A1C;
+    text-align: center;
+    margin: 80px 0 60px;
+}
+h4 {
+    color: #BD7A1C;
+    text-align: center;
+    margin: 80px 0 60px;
+}
+
+#cake-list, #order-form, #order-list {
+    margin-bottom: 5px;
+}
+
+#menuSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f0e0d6; 
+}
+
+#menuImage {
+    width: 300px; 
+    height: auto; 
+    object-fit: cover;
+}
+.menu-content {
+    flex: 1; 
+}
+
+#orderForm{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+} 
+
+form label {
+    width: 80px; 
+    margin-left: 20px;
+    margin-right: 5px; 
+    font-size: 16px;
+}
+
+form button {
+    width: 80px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dc96a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #bf7a86;
+}
+
+/* Horizontal Slide for banner*/
+.hmove { 
+    display: flex; 
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hslide { 
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #bd7a1c;
+    background-color: rgba(240, 210, 169, 0.85);
+}
+
+.hwrap { 
+    overflow: hidden;
+    width: 100%;
+}
+
+@keyframes slideh {
+    0% { transform: translateX(0%); }
+    45% { transform: translateX(0%); }
+    50% { transform: translateX(-50%); }
+    95% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+.hmove { 
+    animation: slideh 4s infinite;
+}
+
+.hmove:hover { 
+    animation-play-state: paused;
+}
+
+/* Removing default styling for the cakes list */
+#cakes {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Styling each list item in the cakes list */
+#cakes li {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+/* Styling the strong tags inside list items */
+#cakes li strong {
+    color: #be1477; 
+    font-weight: bold; 
+}
+
+/* Adding hover effect */
+#cakes li:hover {
+    background-color: #eaeaea; 
+    cursor: pointer; 
+}
+
+
+/* Removing default styling for the orders list */
+#orders {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Style each list item in the orders list */
+#orders li {
+    background-color: #f9f9f9; 
+    justify-content: space-between;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    color: #333;
+}
+
+/* Styling the strong tags inside list items */
+#orders li strong {
+    color: #be1477; 
+    font-weight: bold; 
+}
+
+/* Adding hover effect  */
+#orders li:hover {
+    background-color: #eaeaea; 
+    cursor: pointer; 
+}
+
+
